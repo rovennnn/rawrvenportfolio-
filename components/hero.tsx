@@ -28,15 +28,24 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <div className="relative aspect-square w-20 shrink-0 overflow-hidden border border-line-light dark:border-line-dark sm:w-28 md:w-40">
-          <Image
-            src="/avatar.jpg"
-            alt={`Portrait of ${profile.name}`}
-            fill
-            sizes="(min-width: 768px) 160px, 96px"
-            className="object-cover"
-            priority
-          />
+        <div className="relative w-20 shrink-0 sm:w-28 md:w-40">
+          <span className="pointer-events-none absolute -left-1.5 -top-1.5 h-3 w-3 border-l border-t border-signal-light dark:border-signal-dark" />
+          <span className="pointer-events-none absolute -right-1.5 -top-1.5 h-3 w-3 border-r border-t border-signal-light dark:border-signal-dark" />
+          <span className="pointer-events-none absolute -left-1.5 -bottom-1.5 h-3 w-3 border-l border-b border-signal-light dark:border-signal-dark" />
+          <span className="pointer-events-none absolute -right-1.5 -bottom-1.5 h-3 w-3 border-r border-b border-signal-light dark:border-signal-dark" />
+          <div className="relative aspect-square overflow-hidden border border-line-light dark:border-line-dark">
+            <Image
+              src="/avatar.jpg"
+              alt={`Portrait of ${profile.name}`}
+              fill
+              sizes="(min-width: 768px) 160px, 96px"
+              className="object-cover"
+              priority
+            />
+          </div>
+          <p className="mt-2 text-right font-mono text-[10px] text-ink/45 dark:text-paper/45">
+            avatar.jpg
+          </p>
         </div>
       </Reveal>
     </section>

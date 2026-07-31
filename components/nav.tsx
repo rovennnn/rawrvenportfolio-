@@ -2,11 +2,11 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { profile } from "@/lib/data";
 
 const links = [
-  { href: "#about", label: "about" },
   { href: "#experience", label: "experience" },
   { href: "#projects", label: "projects" },
   { href: "#skills", label: "skills" },
   { href: "#education", label: "education" },
+  { href: "#about", label: "about" },
   { href: "#contact", label: "contact" },
 ];
 
