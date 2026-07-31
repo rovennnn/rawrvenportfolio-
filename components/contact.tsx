@@ -47,7 +47,6 @@ export function Footer() {
     <footer className="border-t border-line-light dark:border-line-dark">
       <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-6 py-6 font-mono text-xs text-ink/45 dark:text-paper/45">
         <span>© {new Date().getFullYear()} {profile.name}</span>
-        <span>built with next.js · deployed on vercel</span>
       </div>
     </footer>
   );
