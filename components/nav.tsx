@@ -19,7 +19,7 @@ export function Nav() {
           className="font-mono text-sm tracking-tight text-signal-light dark:text-signal-dark"
         >
           {profile.initials}
-          <span className="text-ink/50 dark:text-paper/50">@portfolio</span>
+          <span className="text-ink/50 dark:text-paper/50"></span>
           <span className="animate-pulse">_</span>
         </a>
         <nav className="hidden gap-6 font-mono text-xs uppercase tracking-wide text-ink/70 dark:text-paper/70 md:flex">
