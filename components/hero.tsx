@@ -44,6 +44,7 @@ export function Hero() {
             />
           </div>
           <p className="mt-2 text-right font-mono text-[10px] text-ink/45 dark:text-paper/45">
+            Rawrven
           </p>
         </div>
       </Reveal>
