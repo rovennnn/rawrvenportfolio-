@@ -13,7 +13,6 @@ export function Projects() {
             {"// projects"}
           </p>
           <p className="mt-2 max-w-prose text-sm text-ink/60 dark:text-paper/60">
-            Logged in reverse-chronological order, most recent first.
           </p>
         </Reveal>
 
