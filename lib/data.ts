@@ -1,7 +1,7 @@
 export const profile = {
   name: "John Roven D. Guatno",
   initials: "JRG",
-  positioning: "Computer Science Graduate — Aspiring Backend & Blockchain Developer",
+  positioning: "Computer Science Graduate — Aspiring Backend Developer",
   location: "Botolan, Zambales, Philippines",
   email: "guatnojohnroven@gmail.com",
   phone: "+63 969 293 0260",
