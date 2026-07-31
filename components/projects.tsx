@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { projects } from "@/lib/data";
 import { Reveal } from "@/components/reveal";
 
@@ -39,6 +40,26 @@ export function Projects() {
               <p className="mt-3 max-w-prose text-sm leading-relaxed text-ink/85 dark:text-paper/85 md:text-base">
                 {project.summary}
               </p>
+              {project.diagram && (
+                <div className="relative mt-4 max-w-md">
+                  <span className="pointer-events-none absolute -left-1.5 -top-1.5 h-3 w-3 border-l border-t border-signal-light dark:border-signal-dark" />
+                  <span className="pointer-events-none absolute -right-1.5 -top-1.5 h-3 w-3 border-r border-t border-signal-light dark:border-signal-dark" />
+                  <span className="pointer-events-none absolute -left-1.5 -bottom-1.5 h-3 w-3 border-l border-b border-signal-light dark:border-signal-dark" />
+                  <span className="pointer-events-none absolute -right-1.5 -bottom-1.5 h-3 w-3 border-r border-b border-signal-light dark:border-signal-dark" />
+                  <div className="border border-line-light bg-paper p-3 dark:border-line-dark">
+                    <Image
+                      src={project.diagram.src}
+                      alt={project.diagram.alt}
+                      width={project.diagram.width}
+                      height={project.diagram.height}
+                      className="h-auto w-full"
+                    />
+                  </div>
+                  <p className="mt-2 font-mono text-[10px] text-ink/45 dark:text-paper/45">
+                    {project.diagram.caption}
+                  </p>
+                </div>
+              )}
               <div className="mt-3 flex flex-wrap gap-2">
                 {project.features.map((feature) => (
                   <span key={feature} className="tag">

@@ -1,7 +1,7 @@
 export const profile = {
   name: "John Roven D. Guatno",
-  initials: "JRDG",
-  positioning: "Computer Science Graduate — Aspiring Backend Developer",
+  initials: "JRG",
+  positioning: "Computer Science Graduate — Aspiring Backend & Blockchain Developer",
   location: "Botolan, Zambales, Philippines",
   email: "guatnojohnroven@gmail.com",
   phone: "+63 969 293 0260",
@@ -36,6 +36,13 @@ export type Project = {
   stack: string[];
   summary: string;
   features: string[];
+  diagram?: {
+    src: string;
+    alt: string;
+    caption: string;
+    width: number;
+    height: number;
+  };
 };
 
 export const projects: Project[] = [
@@ -54,6 +61,13 @@ export const projects: Project[] = [
       "Role-based access control",
       "Immutable vote storage",
     ],
+    diagram: {
+      src: "/voting-system-architecture.jpg",
+      alt: "Four-tier system architecture diagram: presentation tier (voter dashboard, admin dashboard, verification portal), application tier (API gateway, auth service, smart contract interface, reporting service), blockchain network tier (peer nodes, RAFT orderer nodes, certificate authority), and persistence tier (distributed ledger, world state, private data collections).",
+      caption: "fig. 1 — four-tier system architecture",
+      width: 743,
+      height: 916,
+    },
   },
   {
     id: "web-scraper",
