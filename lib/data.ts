@@ -1,6 +1,6 @@
 export const profile = {
   name: "John Roven D. Guatno",
-  initials: "JRG",
+  initials: "JRDG",
   positioning: "Computer Science Graduate — Aspiring Backend Developer",
   location: "Botolan, Zambales, Philippines",
   email: "guatnojohnroven@gmail.com",
