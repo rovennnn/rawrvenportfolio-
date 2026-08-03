@@ -52,7 +52,7 @@ export const projects: Project[] = [
     version: "v0.1",
     name: "Quorum",
     role: "Full-Stack Blockchain Developer · Personal Project",
-    dateLabel: "2025",
+    dateLabel: "2026",
     start: "2025-01",
     stack: ["Solidity", "Next.js", "wagmi v2", "Sepolia Testnet"],
     summary:
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     version: "v0.2",
     name: "Sealmark",
     role: "Full-Stack Blockchain Developer · Personal Project",
-    dateLabel: "2025",
+    dateLabel: "2026",
     start: "2025-01",
     stack: ["Solidity", "Next.js", "Ethereum"],
     summary:
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     version: "v0.3",
     name: "Kanvas",
     role: "Full-Stack Developer · Personal Project",
-    dateLabel: "2025",
+    dateLabel: "2026",
     start: "2025-01",
     stack: ["Next.js", "WebSockets", "TypeScript"],
     summary:
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     version: "v0.4",
     name: "Logwatch",
     role: "Full-Stack Developer · Personal Project",
-    dateLabel: "2025",
+    dateLabel: "2026",
     start: "2025-01",
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     summary:
