@@ -36,6 +36,7 @@ export type Project = {
   stack: string[];
   summary: string;
   features: string[];
+  liveUrl?: string;
   diagram?: {
     src: string;
     alt: string;
@@ -47,8 +48,60 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "voting-system",
+    id: "quorum",
     version: "v0.1",
+    name: "Quorum",
+    role: "Full-Stack Blockchain Developer · Personal Project",
+    dateLabel: "2025",
+    start: "2025-01",
+    stack: ["Solidity", "Next.js", "wagmi v2", "Sepolia Testnet"],
+    summary:
+      "Decentralized governance app where token holders submit proposals and vote on-chain. Vote weight is tied to token balance; results are permanent and publicly verifiable on Sepolia testnet.",
+    features: ["On-chain proposals", "Token-weighted voting", "Wallet connect"],
+    liveUrl: "https://try-quorum.vercel.app/",
+  },
+  {
+    id: "sealmark",
+    version: "v0.2",
+    name: "Sealmark",
+    role: "Full-Stack Blockchain Developer · Personal Project",
+    dateLabel: "2025",
+    start: "2025-01",
+    stack: ["Solidity", "Next.js", "Ethereum"],
+    summary:
+      "On-chain certificate registry — documents are hashed and written to a smart contract so anyone can verify authenticity without trusting a central database.",
+    features: ["Hash registration", "On-chain verification", "Tamper detection"],
+    liveUrl: "https://sealmark.vercel.app/",
+  },
+  {
+    id: "kanvas",
+    version: "v0.3",
+    name: "Kanvas",
+    role: "Full-Stack Developer · Personal Project",
+    dateLabel: "2025",
+    start: "2025-01",
+    stack: ["Next.js", "WebSockets", "TypeScript"],
+    summary:
+      "Lightweight realtime collaborative task board — create a board, share the link, and every move shows up live on everyone's screen instantly.",
+    features: ["Realtime sync", "Shareable boards", "Live cursors"],
+    liveUrl: "https://kanvas-io.vercel.app/",
+  },
+  {
+    id: "logwatch",
+    version: "v0.4",
+    name: "Logwatch",
+    role: "Full-Stack Developer · Personal Project",
+    dateLabel: "2025",
+    start: "2025-01",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    summary:
+      "Ops dashboard for triaging application logs — surfaces traffic patterns, error rates, and slow endpoints in one view so engineers can diagnose issues without digging through raw output.",
+    features: ["Traffic analytics", "Error triage", "Slow endpoint detection"],
+    liveUrl: "https://uselogwatch.vercel.app/",
+  },
+  {
+    id: "voting-system",
+    version: "v0.5",
     name: "Hyperledger Fabric Voting System",
     role: "Backend & Blockchain Developer · Thesis",
     dateLabel: "Nov 2025",
@@ -71,7 +124,7 @@ export const projects: Project[] = [
   },
   {
     id: "web-scraper",
-    version: "v0.2",
+    version: "v0.6",
     name: "Web Scraper Desktop Application",
     role: "Python Automation Developer",
     dateLabel: "Mar – May 2026",
@@ -83,7 +136,7 @@ export const projects: Project[] = [
   },
   {
     id: "erc-nea-dms",
-    version: "v0.3",
+    version: "v0.7",
     name: "ERC & NEA Document Management System",
     role: "Full-Stack Web Developer",
     dateLabel: "Mar – May 2026",
@@ -95,7 +148,7 @@ export const projects: Project[] = [
   },
   {
     id: "office-reminder",
-    version: "v0.4",
+    version: "v0.8",
     name: "Office Reminder System",
     role: "Python Developer",
     dateLabel: "Feb – Apr 2026",

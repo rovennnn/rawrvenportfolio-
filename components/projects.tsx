@@ -14,6 +14,7 @@ export function Projects() {
             {"// projects"}
           </p>
           <p className="mt-2 max-w-prose text-sm text-ink/60 dark:text-paper/60">
+            Logged in reverse-chronological order, most recent first.
           </p>
         </Reveal>
 
@@ -66,9 +67,21 @@ export function Projects() {
                   </span>
                 ))}
               </div>
-              <p className="mt-3 font-mono text-xs text-ink/45 dark:text-paper/45">
-                {project.stack.join(" · ")}
-              </p>
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+                <p className="font-mono text-xs text-ink/45 dark:text-paper/45">
+                  {project.stack.join(" · ")}
+                </p>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-mono text-xs text-signal-light underline-offset-2 hover:underline dark:text-signal-dark"
+                  >
+                    live site ↗
+                  </a>
+                )}
+              </div>
             </Reveal>
           ))}
         </div>
